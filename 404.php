@@ -1,16 +1,10 @@
 <?php
 /**
  * The template for displaying 404 pages (Not Found)
-<<<<<<< HEAD
  * TESTING WHAT HAPPENS WHEN FILES COLLIDE.....AGAINNNNNNNN!!!!!
-=======
-<<<<<<< HEAD
  * David-shut up
  *
-=======
  * TESTING WHAT HAPPENS WHEN FILES COLLIDE
->>>>>>> origin/master
->>>>>>> 019dece7f8bda9d43732351a6dbcce16f022e1ea
  * @package WordPress
  * @subpackage Twenty_Fourteen
  * @since Twenty Fourteen 1.0
