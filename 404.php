@@ -1,6 +1,7 @@
 <?php
 /**
  * The template for displaying 404 pages (Not Found)
+ * David-shut up
  *
  * @package WordPress
  * @subpackage Twenty_Fourteen
