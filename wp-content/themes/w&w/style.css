@@ -30,7 +30,7 @@ a:visited{}
 img{}
 
 /*============================HEADER================================*/
-.header-tab{display: block; background-color: orange; height: 5px; width: 450px; margin: 0 auto;}
+.header-tab{display: block; background-color: #a93423; height: 5px; width: 450px; margin: 0 auto;}
 .wrapper {min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -30px;}
 .clearfix {}
 header{width:100%; height: auto !important; padding:}
@@ -40,9 +40,8 @@ header{width:100%; height: auto !important; padding:}
 .header-social{float: right;}
 .header-social a, .header-social p{display: inline;}
 nav{text-align: center;}
-.menu ul li{display: inline; padding: 5px;}
-.menu ul li:before{ content:"/";}
-.menu ul li:nth-child(1):before{content:"";}
+.menu li{display: inline; padding: 5px;}
+.menu li:nth-child(1):before{content:"";}
 
 /*=========================BODY(INDEX)=================================*/
 section{display: block; margin-bottom: 20px;}
