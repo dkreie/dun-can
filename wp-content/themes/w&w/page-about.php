@@ -3,7 +3,7 @@
 ?>
 <?php get_header(); ?>
     <section class="clearfix">
-        <div class="contact-left">
+        <div class="about-left">
             <?php
             $license=array(
                 'post_type' => 'credentials',
@@ -24,10 +24,6 @@
             if (have_posts()) {
                 while (have_posts()){
                     the_post();
-                    echo"<h1>";
-                    the_title();
-                    echo"</h1>";
-                    wp_reset_query();
                     // The Query
                     echo"<h3>Licenses</h3>";
                     query_posts($license);
@@ -80,7 +76,7 @@
             wp_reset_postdata();
             ?>
             </div>
-            <div class="contact-right">
+            <div class="about-right">
                 <?php
                     // The Query
                     if (have_posts()) {
@@ -88,7 +84,7 @@
                         while (have_posts()){
                             the_post();
                             echo"<div>";
-                            the_content('');
+                            the_content();
                             echo"</div>";
                         }// end while
                     }// end if
