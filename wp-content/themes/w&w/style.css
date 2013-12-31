@@ -41,11 +41,6 @@ header{width:100%; height: auto !important; padding:}
 .header-social a, .header-social p{display: inline;}
 nav{text-align: center;}
 .menu li{display: inline; padding: 5px;}
-<<<<<<< HEAD
-=======
-.menu li:before{ content:"/";}
->>>>>>> d8dfede8ef721098f3bc66280abf849da30efba8
-.menu li:nth-child(1):before{content:"";}
 
 /*=========================BODY(INDEX)=================================*/
 section{display: block; margin-bottom: 20px;}
