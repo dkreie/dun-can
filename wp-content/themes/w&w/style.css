@@ -40,9 +40,9 @@ header{width:100%; height: auto !important; padding:}
 .header-social{float: right;}
 .header-social a, .header-social p{display: inline;}
 nav{text-align: center;}
-.menu ul li{display: inline; padding: 5px;}
-.menu ul li:before{ content:"/";}
-.menu ul li:nth-child(1):before{content:"";}
+.menu li{display: inline; padding: 5px;}
+.menu li:before{ content:"/";}
+.menu li:nth-child(1):before{content:"";}
 
 /*=========================BODY(INDEX)=================================*/
 section{display: block; margin-bottom: 20px;}
