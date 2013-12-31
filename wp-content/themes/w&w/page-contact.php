@@ -3,45 +3,98 @@
 ?>
 <?php get_header(); ?>
         <section class="clearfix">
-        <?php
-        // The Query
-            $artists=array(
-                'post_type' => 'artists',
-                'posts_per_page' => 30
-            );
-            if (have_posts()) {
-                    the_post();
-                        echo"<div class='home-carousel clearfix'>";
-                        the_content();
-                        echo"</div><h1 class='home-artists-title'>";
-                        the_field('carousel_title');
-                        echo"</h1><div class='home-artists'>";
-                        wp_reset_query();
-                        // Reset Query
-                        wp_reset_postdata();
-                        query_posts($artists);
+            <div class="contact-left">
+                <?php
+                    // The Query
+                    $licenses=array(
+                        'post_type' => 'licenses',
+                        'posts_per_page' => 30
+                    );
+                    if (have_posts()) {
+                    echo"<h1>";
+                    the_title();
+                    echo"</h1>"
+                        query_posts($licenses);
                         // The Loop
                         while (have_posts()){
                             the_post();
-                                echo"<a href='";get_template_directory();echo"/lineup'><div class='thumbnail-container'><div class='image-frame'>";
-                                the_post_thumbnail();
-                                echo"</div><h4>";
+                                echo"<li>";
                                 the_title();
-                                echo"</h4></div></a>";
+                                echo"</li>";
+                                if (have_content()){
+                                        echo"<p>";
+                                        the_content();
+                                        echo"</p>"
+                                }// end if
                         }// end while
+                    }// end if
+                    wp_reset_query();
+                    // Reset Query
+                    wp_reset_postdata();
+                     // The Query
+                    $memberships=array(
+                        'post_type' => 'memberships',
+                        'posts_per_page' => 30
+                    );
+                    if (have_posts()) {
+                        query_posts($memberships);
+                        // The Loop
+                        while (have_posts()){
+                            the_post();
+                                echo"<li>";
+                                the_title();
+                                echo"</li>";
+                                if (have_content()){
+                                        echo"<p>";
+                                        the_content();
+                                        echo"</p>"
+                                }// end if
+                        }// end while
+                    }// end if
+                    wp_reset_query();
+                    // Reset Query
+                    wp_reset_postdata();
+                     // The Query
+                    $certifications=array(
+                        'post_type' => 'certifications',
+                        'posts_per_page' => 30
+                    );
+                    if (have_posts()) {
+                        query_posts($certifications);
+                        // The Loop
+                        while (have_posts()){
+                            the_post();
+                                echo"<li>";
+                                the_title();
+                                echo"</li>";
+                                if (have_content()){
+                                        echo"<p>";
+                                        the_content();
+                                        echo"</p>"
+                                }// end if
+                        }// end while
+                    }// end if
+                    wp_reset_query();
+                    // Reset Query
+                    wp_reset_postdata();
+                ?>
+            </div>
+            <div class="contact-right">
+                <?php
+                        // The Query
+                        if (have_posts()) {
+                            // The Loop
+                            while (have_posts()){
+                                the_post();
+                                    echo"<div>";
+                                    the_content();
+                                    echo"</div>";
+                            }// end while
+                        }// end if
                         wp_reset_query();
                         // Reset Query
                         wp_reset_postdata();
-                        echo"</div><div class='home-sponsors clearfix'>";
-                        the_field('home_page_sponsors');
-                        echo"</div><div class='home-column-container'><div class='home-column merch'>";
-                        the_field('home_merch');
-                        echo"</div><div class='home-social-feed clearfix'><div class='home-column flickr'><img src='";bloginfo('template_directory');echo"/assets/img/flickr-bg-header.png'/>";
-                        the_field('home_flickr');
-                        echo"<img src='";bloginfo('template_directory');echo"/assets/img/flickr-bg-footer.png'/></div><div class='home-column facebook'>";
-                        the_field('home_facebook');
-                        echo"</div></div></div>";
-            } // end if
-        ?>
-</section>
+                ?>
+            </div>
+        </section>
 <?php get_footer(); ?>

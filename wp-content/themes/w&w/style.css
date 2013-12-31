@@ -31,7 +31,7 @@ img{}
 
 /*============================HEADER================================*/
 .header-tab{display: block; background-color: orange; height: 5px; width: 450px; margin: 0 auto;}
-.wrapper{margin: 15px 20px 20px 20px;}
+.wrapper {min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -30px;}
 .clearfix {}
 header{width:100%; height: auto !important; padding:}
 .header-logo{margin:0 auto; width: 100%;}
@@ -41,11 +41,17 @@ header{width:100%; height: auto !important; padding:}
 .header-social a, .header-social p{display: inline;}
 nav{text-align: center;}
 .menu ul li{display: inline; padding: 5px;}
+.menu ul li:before{ content:"/";}
+.menu ul li:nth-child(1):before{content:"";}
 
 /*=========================BODY(INDEX)=================================*/
-section{height: 100%; display: block; margin-bottom: 30px;}
+section{display: block; margin-bottom: 20px;}
 .home-carousel{padding:20px 0px;}
 .metaslider{margin: 0 auto;}
 
+/*=========================CONTACT US=================================*/
+
+
 /*============================FOOTER===============================*/
-footer{ height: 30px; margin-top: -30px; text-align: center;}
+footer, .push{ height: 30px; clear: both;}
+footer{ text-align: center; position: relative; display: block;}
