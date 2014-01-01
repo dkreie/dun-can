@@ -21,77 +21,64 @@
                 'posts_per_page' => 30
             );
             // The Query
+            echo"<h3>Licenses</h3>";
+            query_posts($license);
+            // The Loop
             if (have_posts()) {
                 while (have_posts()){
                     the_post();
-                    // The Query
-                    echo"<h3>Licenses</h3>";
-                    query_posts($license);
-                    // The Loop
-                    if (have_posts()) {
-                        while (have_posts()){
-                            the_post();
-                            echo"<li>";
-                            the_title();
-                            echo"</li>";
-                        }// end while
-                    }// end if
-                    wp_reset_query();
-                    // Reset Query
-                    wp_reset_postdata();
-                    // The Query
-                    echo"<h3>Memberships</h3>";
-                    query_posts($membership);
-                    // The Loop
-                    if (have_posts()) {
-                        while (have_posts()){
-                            the_post();
-                            echo"<li>";
-                            the_title();
-                            echo"</li>";
-                        }// end while
-                    }// end if
-                    wp_reset_query();
-                    // Reset Query
-                    wp_reset_postdata();
-                    // The Query
-                    echo"<h3>Certifications</h3>";
-                    query_posts($certification);
-                    // The Loop
-                    if (have_posts()) {
-                        while (have_posts()){
-                            the_post();
-                            echo"<li>";
-                            the_title();
-                            echo"</li>";
-                        }// end while
-                    }// end if
-                    wp_reset_query();
-                    // Reset Query
-                    wp_reset_postdata();
-                }//end while
-            }//end if
+                    echo"<li>";
+                    the_title();
+                    echo"</li>";
+                }// end while
+            }// end if
+            wp_reset_query();
+            // Reset Query
+            wp_reset_postdata();
+            // The Query
+            echo"<h3>Memberships</h3>";
+            query_posts($membership);
+            // The Loop
+            if (have_posts()) {
+                while (have_posts()){
+                    the_post();
+                    echo"<li>";
+                    the_title();
+                    echo"</li>";
+                }// end while
+            }// end if
+            wp_reset_query();
+            // Reset Query
+            wp_reset_postdata();
+            // The Query
+            echo"<h3>Certifications</h3>";
+            query_posts($certification);
+            // The Loop
+            if (have_posts()) {
+                while (have_posts()){
+                    the_post();
+                    echo"<li>";
+                    the_title();
+                    echo"</li>";
+                }// end while
+            }// end if
             wp_reset_query();
             // Reset Query
             wp_reset_postdata();
             ?>
-            </div>
-            <div class="about-right">
-                <?php
-                    // The Query
-                    if (have_posts()) {
-                        // The Loop
-                        while (have_posts()){
-                            the_post();
-                            echo"<div>";
-                            the_content();
-                            echo"</div>";
-                        }// end while
-                    }// end if
-                    wp_reset_query();
-                    // Reset Query
-                    wp_reset_postdata();
-                ?>
-            </div>
-        </section>
+        </div>
+        <div class="about-right">
+            <?php
+                // The Query
+                if (have_posts()) {
+                    the_post();
+                    echo"<div>";
+                    the_content();
+                    echo"</div>";
+                }// end if
+                wp_reset_query();
+                // Reset Query
+            ?>
+        </div>
+    </section>
 <?php get_footer(); ?>
