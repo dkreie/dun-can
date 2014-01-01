@@ -12,8 +12,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* Layout */
 
-html{height:100%; width: 100%; font-family: 'Quicksand', sans-serif;}
-html body{height:100%; width: 100%}
+html{height:100%; width: 100%; font-family: 'Titillium Web', sans-serif; background-color: #f9f9f9;}
+html body{height:100%; width: 100% background-color: #f9f9f9;}
 /* Basic Setup */
 * {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0;}
 h1 {}
@@ -24,9 +24,10 @@ p {}
 label{}
 ul {}
 li {}
-a {}
-a:hover a:focus{}
-a:visited{}
+a:link {font-size: 10pt; color: #666666;text-decoration:none;}
+a:visited {color: #666666;text-decoration:none;}
+a:hover {color: #a93423;text-decoration:none;}
+a:active {text-decoration:none;}
 img{}
 
 /*============================HEADER================================*/
@@ -40,7 +41,7 @@ header{width:100%; height: auto !important; padding:}
 .header-social{float: right;}
 .header-social a, .header-social p{display: inline;}
 nav{text-align: center;}
-.menu li{display: inline; padding: 5px;}
+.menu li{display: inline; padding: 15px;}
 
 /*=========================BODY(INDEX)=================================*/
 section{display: block; margin-bottom: 20px;}
