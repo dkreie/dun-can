@@ -17,9 +17,11 @@
                     the_post();
                     echo"<ul class='news'><li class='news-photo'>";
                     the_post_thumbnail();
-                    echo"</li><li class='news-content'>";
+                    echo"</li><li class='news-content'><h2>";
+                    the_title();
+                    echo"</h2><p>";
                     the_content();
-                    echo"</li></ul>";
+                    echo"</p></li></ul>";
                 }// end while
             }// end if
             wp_reset_query();
