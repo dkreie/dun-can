@@ -72,9 +72,9 @@
                 // The Query
                 if (have_posts()) {
                     the_post();
-                    echo"<div>";
+                    echo"<div><p>";
                     the_content();
-                    echo"</div>";
+                    echo"</p></div>";
                 }// end if
                 wp_reset_query();
                 // Reset Query
