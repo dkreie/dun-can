@@ -38,8 +38,8 @@ header{width:100%; height: auto !important; padding:}
 .header-logo{margin:0 auto; width: 100%;}
 .header-logo a{width:150px; max-width: 100%; margin: 0 auto; display: block;}
 .header-logo img{width: 150px; max-width: 100%; height: auto !important;}
-.header-social{float: right;}
-.header-social a, .header-social p{display: inline;}
+.header-social{float: right; margin-right: 25px;}
+.header-social a, .header-social p{display: inline; padding: 5px;}
 nav{text-align: center;}
 .menu li{display: inline; padding: 15px;}
 
