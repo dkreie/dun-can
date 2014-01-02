@@ -17,11 +17,11 @@
                     the_post();
                     echo"<li class='news'>";
                     the_post_thumbnail();
-                    echo"<h2>";
+                    echo"<div class='news-content'><h2>";
                     the_title();
                     echo"</h2><p>";
                     the_content();
-                    echo"</p></li>";
+                    echo"</p></div></li>";
                 }// end while
             }// end if
             wp_reset_query();
