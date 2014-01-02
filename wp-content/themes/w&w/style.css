@@ -51,6 +51,10 @@ section{display: block; margin-bottom: 20px;}
 /*=========================CONTACT US=================================*/
 
 
+
+/*=========================ABOUT US=================================*/
+.about-right { float: right;}
+
 /*============================FOOTER===============================*/
 footer, .push{ height: 30px; clear: both;}
 footer{ text-align: center; position: relative; display: block;}
