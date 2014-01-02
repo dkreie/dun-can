@@ -3,7 +3,7 @@
 ?>
 <?php get_header(); ?>
     <section class="clearfix">
-        <div class="news-container"><ul class="news-list">
+        <ul class="news-list">
             <?php
             $news=array(
                 'post_type' => 'news',
@@ -28,6 +28,6 @@
             // Reset Query
             wp_reset_postdata();
             ?>
-        </ul></div>
+        </ul>
     </section>
 <?php get_footer(); ?>

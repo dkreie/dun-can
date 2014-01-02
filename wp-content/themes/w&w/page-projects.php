@@ -3,35 +3,33 @@
 ?>
 <?php get_header(); ?>
     <section class="clearfix">
-        <div class="projects-container">
+        <ul class="projects-container">
         <?php
+        $projects=array(
+            'post_type' => 'projects',
+            'posts_per_page' => 3000
+        );
         // The Query
-            $media_sponsors=array(
-                'post_type' => 'sponsors',
-                'sponsor_type' => 'media',
-                'posts_per_page' => 30
-            );
-            if (have_posts()) {
+        query_posts($projects);
+        // The Loop
+        if (have_posts()) {
+            while (have_posts()){
                 the_post();
-                wp_reset_query();
-                // Reset Query
-                wp_reset_postdata();
-                query_posts($media_sponsors);
-                // The Loop
-                while (have_posts()){
-                    the_post();
-                        echo"<div class='sponsor-list'><a href='";the_field('custom_url');echo"' target='_blank'><div class='sponsor'>";
-                        the_content();
-                        echo"</div><p>";
-                        the_excerpt();
-                        echo"</p></a></div>";
-                }// end while
-                wp_reset_query();
-                // Reset Query
-                wp_reset_postdata();
-                echo"</div>";
-            } // end if
+                echo"<li class='project'>";
+                the_post_thumbnail();
+                echo"</li><div class='project-content'>";
+                the_content();
+                echo"<h2>";
+                the_title();
+                echo"</h2><p>";
+                the_excerpt();
+                echo"</p></div>";
+            }// end while
+        }// end if
+        wp_reset_query();
+        // Reset Query
+        wp_reset_postdata();
         ?>
-        </div>
+        </ul>
     </section>
 <?php get_footer(); ?>
