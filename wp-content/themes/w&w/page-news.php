@@ -3,7 +3,7 @@
 ?>
 <?php get_header(); ?>
     <section class="clearfix">
-        <div class="news-container">
+        <div class="news-container"><ul class="news-list">
             <?php
             $news=array(
                 'post_type' => 'news',
@@ -15,19 +15,19 @@
             if (have_posts()) {
                 while (have_posts()){
                     the_post();
-                    echo"<ul class='news'><li class='news-photo'>";
+                    echo"<li class='news'>";
                     the_post_thumbnail();
-                    echo"</li><li class='news-content'><h2>";
+                    echo"<div class='news-content'><h2>";
                     the_title();
                     echo"</h2><p>";
                     the_content();
-                    echo"</p></li></ul>";
+                    echo"</p></div></li>";
                 }// end while
             }// end if
             wp_reset_query();
             // Reset Query
             wp_reset_postdata();
             ?>
-        </div>
+        </ul></div>
     </section>
 <?php get_footer(); ?>
