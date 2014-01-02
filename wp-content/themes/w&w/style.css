@@ -56,6 +56,8 @@ section{display: block; margin-bottom: 20px;}
 /*=========================ABOUT US=================================*/
 .about-right { float: right; padding-right: 10px;}
 .about-left {max-width: 200px; padding-left: 10px; margin-right: 10px;}
+.about-left li:before{ list-style-type: none; content:"-"; position:relative; left:-5px;}
+.about-left li{ list-style-type: none; text-indent:-5px; }
 
 /*============================FOOTER===============================*/
 footer, .push{ height: 30px; clear: both;}
