@@ -2,7 +2,7 @@
 /*Template Name: Home Page*/
 ?>
 <?php get_header(); ?>
-    <section class="clearfix">
+    <div class="home clearfix">
     <?php
     // The Query
         if (have_posts()) {
@@ -15,5 +15,5 @@
             wp_reset_postdata();
         } // end if
     ?>
-    </section>
+    </div>
 <?php get_footer(); ?>
