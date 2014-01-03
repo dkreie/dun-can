@@ -33,7 +33,7 @@ img{}
 /*============================HEADER================================*/
 .header-tab{display: block; background-color: #a93423; height: 5px; width: 450px; margin: 0 auto;}
 .wrapper {min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -30px;}
-section {max-width: 1200px; margin: 0 auto;}
+section {max-width: 1200px; display: block; margin: 0 auto 20px;}
 header{width:100%; height: auto !important; padding:}
 .header-logo{margin:0 auto; width: 100%;}
 .header-logo a{width:150px; max-width: 100%; margin: 0 auto; display: block;}
@@ -44,7 +44,6 @@ nav{text-align: center;}
 .menu li{display: inline; padding: 15px;}
 
 /*=========================BODY(INDEX)=================================*/
-section{display: block; margin-bottom: 20px;}
 .home-carousel{padding:20px 0px;}
 .metaslider{margin: 0 auto;}
 
