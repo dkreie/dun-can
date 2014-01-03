@@ -33,7 +33,7 @@ img{}
 /*============================HEADER================================*/
 .header-tab{display: block; background-color: #a93423; height: 5px; width: 450px; margin: 0 auto;}
 .wrapper {min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -30px;}
-.clearfix {max-width: 1200px;}
+section {max-width: 1200px;}
 header{width:100%; height: auto !important; padding:}
 .header-logo{margin:0 auto; width: 100%;}
 .header-logo a{width:150px; max-width: 100%; margin: 0 auto; display: block;}
@@ -260,5 +260,5 @@ footer{ text-align: center; position: relative; display: block;}
 
 	.og-fullimg { display: none; }
 	.og-details { float: none; width: 100%; }
-	
+
 }
