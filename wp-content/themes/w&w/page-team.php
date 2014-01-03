@@ -29,7 +29,7 @@
                 echo"' data-title='";
                 the_title();
                 echo"' data-description='";
-                the_excerpt();
+                the_content();
                 echo"'>";
                 the_post_thumbnail();
                 echo"</a></li>";
