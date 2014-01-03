@@ -1,7 +1,7 @@
 		<div class="push"></div>
 		</div>
 		<footer>
-			<p>copywrite</p>
+			<p>©2014 W &amp; W Structural Inc. All Rights Reserved.</p>
 		</footer>
 		<?php wp_enqueue_script( 'js-combo', get_bloginfo( 'template_directory' ) . '/js/script.js', array('jquery')); ?>
 		<?php wp_footer(); ?><!-- required don't remove -->
