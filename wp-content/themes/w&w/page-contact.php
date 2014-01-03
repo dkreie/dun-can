@@ -34,5 +34,5 @@
             wp_reset_postdata();
             ?>
         </div>
-        </section>
+    </section>
 <?php get_footer(); ?>

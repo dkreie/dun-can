@@ -3,7 +3,7 @@
 ?>
 <?php get_header(); ?>
     <section class="clearfix">
-        <ul class="projects-container">
+        <ul id="og-grid" class="og-grid">
         <?php
         $projects=array(
             'post_type' => 'projects',
@@ -15,15 +15,19 @@
         if (have_posts()) {
             while (have_posts()){
                 the_post();
-                echo"<li class='project'>";
-                the_post_thumbnail();
-                echo"</li><div class='project-content'>";
-                the_content();
-                echo"<h2>";
+                echo"<li><a href='";
+                the_field('custom_url');
+                echo"' data-largesrc='";
+                bloginfo('url');
+                echo"/wp-content/uploads/";
+                the_field('project_image_location');
+                echo"' data-title='";
                 the_title();
-                echo"</h2><p>";
+                echo"' data-description='";
                 the_excerpt();
-                echo"</p></div>";
+                echo"'>";
+                the_post_thumbnail();
+                echo"</a></li>";
             }// end while
         }// end if
         wp_reset_query();

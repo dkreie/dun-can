@@ -513,3 +513,7 @@ var Grid = (function() {
 	};
 
 })();
+
+$(function() {
+	Grid.init();
+});
