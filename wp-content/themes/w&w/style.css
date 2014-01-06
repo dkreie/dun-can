@@ -49,12 +49,19 @@ nav{text-align: center;}
 
 /*=========================CONTACT US=================================*/
 
-.contact-right { float: right; padding-right: 10px; color: #666666;}
-.contact-left {padding-left: 10px; margin-right: 20px; color: #666666; line-height: 120%;}
+.contact-right { max-width: 1000px; height: auto; float: right; padding-right: 10px; color: #666666; padding-left: 25px;}
+.contact-left { width: 200px; padding-left: 10px; margin-right: 20px; color: #666666; line-height: 120%; border-right-width: 5px; border-right-color:#a93423; border-right-style: solid;}
+.contact-right div p iframe { max-width: 1000px; height: 450px; padding-right: 10px; }
+
+/*=========================NEWS=================================*/
+
+.news img { max-width: 33%; height: auto; }
+.news-content { max-width: 60%; float: right; padding-right: 10px; color: #666666; padding-left: 25px; }
+
 
 /*=========================ABOUT US=================================*/
-.about-right { float: right; padding-right: 10px; color: #666666; border-left-width: 5px; border-left-color:#a93423; border-left-style: solid; padding-left: 25px;}
-.about-left {max-width: 200px; padding-left: 10px; margin-right: 50px; color: #666666; padding-right: 25px;}
+.about-right { float: right; padding-right: 10px; color: #666666; padding-left: 25px;}
+.about-left {max-width: 200px; padding-left: 10px; margin-right: 50px; color: #666666; padding-right: 25px; border-right-width: 5px; border-right-color:#a93423; border-right-style: solid;}
 .about-left li:before{ list-style-type: none; content:"-"; position:relative; left:-5px; color: #666666; line-height: 120%;}
 .about-left li{ list-style-type: none; text-indent:-5px; color: #666666;}
 
