@@ -3,19 +3,6 @@
 ?>
 <?php get_header(); ?>
     <section class="clearfix">
-        <div class="about-right">
-            <?php
-                // The Query
-                if (have_posts()) {
-                    the_post();
-                    echo"<div>";
-                    the_content();
-                    echo"</div>";
-                }// end if
-                wp_reset_query();
-                // Reset Query
-            ?>
-        </div>
         <div class="about-left">
             <?php
             $license=array(
@@ -78,6 +65,19 @@
             wp_reset_query();
             // Reset Query
             wp_reset_postdata();
+            ?>
+        </div>
+        <div class="about-right">
+            <?php
+                // The Query
+                if (have_posts()) {
+                    the_post();
+                    echo"<div>";
+                    the_content();
+                    echo"</div>";
+                }// end if
+                wp_reset_query();
+                // Reset Query
             ?>
         </div>
     </section>
