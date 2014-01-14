@@ -35,11 +35,8 @@
 	                            // The Loop
 	                            while (have_posts()){
 	                                the_post();
-	                                	echo "<div class='header-social'><a class='facebook' href='";
-	                                    the_field('facebook_url');
-										echo"'><p>F</p></a><p>/</p><a class='twitter' href='";
-										the_field('twitter_url');
-										echo"'><p>T</p></a></div><div class='header-logo'><a class='logo clearfix' href='";home_url();echo"/'>";
+	                                	echo "<div class='header-social'><a class='facebook' href='https://www.facebook.com/pages/WW-Structural-Inc/142534105804831'";
+										echo"'><p>F</p></a><p>/</p><a class='twitter' href='https://twitter.com/WWStructural'><p>T</p></a></div><div class='header-logo'><a class='logo clearfix' href='";home_url();echo"/'>";
 	                                    the_content();
 	                                    echo"</a></div>";
 	                            }// end while
