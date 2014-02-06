@@ -12,10 +12,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* Layout */
 
-html{height:100%; width: 100%; font-family: 'Titillium Web', sans-serif; background-color: #f9f9f9;}
-html body{height:100%; width: 100% background-color: #f9f9f9;}
+html{height:100%; width: 100%; max-width: 100%; font-family: 'Titillium Web', sans-serif; background-color: #f9f9f9;}
+html body{height:100%; width: 100%; max-width: 100%; background-color: #f9f9f9;}
 /* Basic Setup */
-* {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0;}
+* {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0;
+}
 h1 {}
 h2 {font-size: 14pt; font-weight: bold; padding-bottom:15px; padding-top: 15px;}
 h3 {font-size: 12pt; font-weight: bold; padding-bottom:15px; padding-top: 15px;}
@@ -38,7 +39,7 @@ header{width:100%; height: auto !important; padding:}
 .header-logo{margin:0 auto; width: 100%;}
 .header-logo a{width:150px; max-width: 100%; margin: 0 auto; display: block;}
 .header-logo img{width: 150px; max-width: 100%; height: auto !important;}
-.header-social{float: right; margin-right: 25px;}
+.header-social{float: right;}
 .header-social a, .header-social p{display: inline; padding: 5px;}
 nav{text-align: center;}
 .menu li{display: inline; padding: 15px;}
@@ -49,19 +50,23 @@ nav{text-align: center;}
 
 /*=========================CONTACT US=================================*/
 
-.contact-right { max-width: 1000px; height: auto; float: right; padding-right: 10px; color: #666666; padding-left: 25px;}
-.contact-left { width: 200px; padding-left: 10px; margin-right: 20px; color: #666666; line-height: 120%; border-right-width: 5px; border-right-color:#a93423; border-right-style: solid;}
-.contact-right div p iframe { max-width: 1000px; height: 450px; padding-right: 10px; }
+.contact-right { float: left; width: 70%; position: relative; display: block; padding-right: 10px; color: #666666; padding-left: 10px;}
+.contact-left { float: left; padding-left: 10px; width: 25%; position: relative; display: block; padding-left: 10px; margin-right: 20px; color: #666666; line-height: 120%; border-right-width: 5px; border-right-color:#a93423; border-right-style: solid;}
+.contact-right div p{width:100%;}
+.contact-right div p iframe { width: 100%; height: 450px; padding-right: 10px; }
+
+
 
 /*=========================NEWS=================================*/
 
-.news img { max-width: 33%; height: auto; }
+.news img { max-width: 33%; height: auto; float: left;}
 .news-content { max-width: 60%; float: right; padding-right: 10px; color: #666666; padding-left: 25px; }
+.news{clear:both;}
 
 
 /*=========================ABOUT US=================================*/
-.about-right { float: right; padding-right: 10px; color: #666666; padding-left: 25px;}
-.about-left {max-width: 200px; padding-left: 10px; margin-right: 50px; color: #666666; padding-right: 25px; border-right-width: 5px; border-right-color:#a93423; border-right-style: solid;}
+.about-right {float: left; color: #666666; padding-left: 10px; max-width: 70%; position: relative; display: block;}
+.about-left {padding-left: 10px; float: left; max-width: 25%; position: relative; display: block; margin-right: 25px; color: #666666; padding-right: 25px; border-right-width: 5px; border-right-color:#a93423; border-right-style: solid;}
 .about-left li:before{ list-style-type: none; content:"-"; position:relative; left:-5px; color: #666666; line-height: 120%;}
 .about-left li{ list-style-type: none; text-indent:-5px; color: #666666;}
 
@@ -277,5 +282,20 @@ footer{ text-align: center; position: relative; display: block; font-size: 10pt;
 
 	.og-fullimg { display: none; }
 	.og-details { float: none; width: 100%; }
+	.about-right { padding-left: 10px; clear: both; float:none; max-width: 100%;}
+	.about-left { padding-left: 10px; float: none; border: none; max-width: 100%;}
+	.about-left li {padding-left: 10px;}
 
+	.contact-right { padding-left: 10px; clear: both; float:none; width: 100%;}
+	.contact-left { padding-left: 10px; float: none; border: none; width: 100%;}
+	.contact-left li {padding-left: 10px;
+	}
+
+	.news img { max-width:100%; height: auto; float: none;}
+.news-content { max-width:100%; float: none; padding-right: 10px; color: #666666; padding-left: 10px; }
+}
+
+@media screen and (max-width: 480px) {
+.menu li{display: inline; padding: 5px;}
+.header-tab {width: 100%;}
 }
