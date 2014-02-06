@@ -20,9 +20,9 @@
         if (have_posts()) {
             while (have_posts()){
                 the_post();
-                echo"<li><a href='";
+                echo"<li class='grid-block'><a href='";
                 the_field('custom_url');
-                echo"' data-largesrc='";
+                echo"' class='grid-link' data-largesrc='";
                 bloginfo('url');
                 echo"/wp-content/uploads/";
                 the_field('project_image_location');

@@ -15,3 +15,10 @@ $(document).ready(function() {
 		// Mobile behavior
 	}
 });
+
+
+$(document).ready(function(){
+	// var className = $('#og-grid > a').attr('class');
+	var imageUrl = $('.grid-link').attr('data-largesrc');
+	$('.grid-block > a').css('background-image', 'url(' + imageUrl + ')');
+});

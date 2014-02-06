@@ -86,14 +86,25 @@ footer{ text-align: center; position: relative; display: block; font-size: 10pt;
 	margin: 10px 5px 0 5px;
 	vertical-align: top;
 	height: 250px;
+	width: 250px;
 }
 
-.og-grid li > a,
-.og-grid li > a img {
+.og-grid li > a{
 	border: none;
 	outline: none;
 	display: block;
 	position: relative;
+	height: 250px;
+	width: 250px;
+	background: no-repeat center center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.og-grid li > a > img{
+	display:none;
 }
 
 .og-grid li.og-expanded > a::after {
