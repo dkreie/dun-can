@@ -59,7 +59,7 @@ nav{text-align: center;}
 
 /*=========================NEWS=================================*/
 
-.news img { width: 33%; max-width: 100%; height: auto; float: left; display: block;}
+.news img { width: 33%; max-width: 100%; height: auto; float: left; display: block; padding: 0px 10px 10px;}
 .news-content { max-width: 60%; float: left; padding-right: 10px; color: #666666; padding-left: 25px; }
 .news{clear:both;}
 
