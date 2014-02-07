@@ -199,7 +199,7 @@ footer{ text-align: center; position: relative; display: block; font-size: 10pt;
 .og-fullimg img {
 	display: inline-block;
 	height: auto !important;
-	min-width: 100%;
+	width: 100%;
 }
 
 .og-details h3 {
