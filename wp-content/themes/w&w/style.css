@@ -65,8 +65,8 @@ nav{text-align: center;}
 
 
 /*=========================ABOUT US=================================*/
-.about-right {float: left; color: #666666; padding-left: 10px; max-width: 70%; position: relative; display: block;}
-.about-left {padding-left: 10px; float: left; max-width: 25%; position: relative; display: block; margin-right: 25px; color: #666666; padding-right: 25px; border-right-width: 5px; border-right-color:#a93423; border-right-style: solid;}
+.about-right {float: left; color: #666666; padding: 0px 10px; max-width: 70%; position: relative; display: block;}
+.about-left {padding: 0px 10px; float: left; max-width: 25%; position: relative; display: block; margin-right: 25px; color: #666666; padding-right: 25px; border-right-width: 5px; border-right-color:#a93423; border-right-style: solid;}
 .about-left li:before{ list-style-type: none; content:"-"; position:relative; left:-5px; color: #666666; line-height: 120%;}
 .about-left li{ list-style-type: none; text-indent:-5px; color: #666666;}
 
