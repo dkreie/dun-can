@@ -35,7 +35,7 @@ img{}
 .header-tab{display: block; background-color: #a93423; height: 5px; width: 450px; margin: 0 auto;}
 .wrapper {min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -30px;}
 section {max-width: 1200px; display: block; margin: 0 auto 20px;}
-header{width:100%; height: auto !important; padding:}
+header{width:100%; height: auto !important; padding-bottom:20px;}
 .header-logo{margin:0 auto; width: 100%;}
 .header-logo a{width:150px; max-width: 100%; margin: 0 auto; display: block;}
 .header-logo img{width: 150px; max-width: 100%; height: auto !important;}
@@ -80,7 +80,7 @@ footer{ text-align: center; position: relative; display: block; font-size: 10pt;
 
 .og-grid {
 	list-style: none;
-	padding: 20px 0;
+	padding-bottom:20px;
 	margin: 0 auto;
 	text-align: center;
 	width: 100%;
