@@ -59,7 +59,7 @@ nav{text-align: center;}
 
 /*=========================NEWS=================================*/
 
-.news img { max-width: 33%; height: auto; float: left;}
+.news img { width: 33%; max-width: 100%; height: auto; float: left; display: block;}
 .news-content { max-width: 60%; float: left; padding-right: 10px; color: #666666; padding-left: 25px; }
 .news{clear:both;}
 
@@ -294,8 +294,8 @@ footer{ text-align: center; position: relative; display: block; font-size: 10pt;
 	.contact-left li {padding-left: 10px;
 	}
 
-	.news img { max-width:100%; height: auto; float: none;}
-.news-content { max-width:100%; float: none; padding-right: 10px; color: #666666; padding-left: 10px; }
+	.news img { width:100%; max-width:100%; height: auto !important; float: none; margin: 0 auto;}
+	.news-content { max-width:100%; float: none; padding-right: 10px; color: #666666; padding-left: 10px; }
 }
 
 @media screen and (max-width: 480px) {
