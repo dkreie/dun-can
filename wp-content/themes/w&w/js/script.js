@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 
 $(document).ready(function(){
-	// var className = $('#og-grid > a').attr('class');
-	var imageUrl = $('.grid-link > img').attr('src');
-	$('.grid-block > a').css('background-image', 'url(' + imageUrl + ')');
+    $('.grid-block > a').each(function(){
+			$(this).css('background-image', 'url(' + $('img',this).attr('src') + ')');
+    });
 });
