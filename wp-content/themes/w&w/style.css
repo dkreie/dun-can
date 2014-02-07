@@ -60,7 +60,7 @@ nav{text-align: center;}
 /*=========================NEWS=================================*/
 
 .news img { max-width: 33%; height: auto; float: left;}
-.news-content { max-width: 60%; float: right; padding-right: 10px; color: #666666; padding-left: 25px; }
+.news-content { max-width: 60%; float: left; padding-right: 10px; color: #666666; padding-left: 25px; }
 .news{clear:both;}
 
 
