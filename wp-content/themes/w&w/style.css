@@ -39,8 +39,8 @@ header{width:100%; height: auto !important; padding:}
 .header-logo{margin:0 auto; width: 100%;}
 .header-logo a{width:150px; max-width: 100%; margin: 0 auto; display: block;}
 .header-logo img{width: 150px; max-width: 100%; height: auto !important;}
-.header-social{float: right;}
-.header-social a, .header-social p{display: inline; padding: 5px;}
+.header-social{float: right; margin: 0px 5px;}
+.header-social a, .header-social p{display: inline-block; padding: 5px;}
 nav{text-align: center;}
 .menu li{display: inline; padding: 15px;}
 
@@ -189,7 +189,7 @@ footer{ text-align: center; position: relative; display: block; font-size: 10pt;
 }
 
 .og-details {
-	padding: 0 40px 0 20px;
+	padding: 0px 40px 0px 20px;
 }
 
 .og-fullimg {
@@ -198,8 +198,8 @@ footer{ text-align: center; position: relative; display: block; font-size: 10pt;
 
 .og-fullimg img {
 	display: inline-block;
-	max-height: 100%;
-	max-width: 100%;
+	height: auto !important;
+	min-width: 100%;
 }
 
 .og-details h3 {
